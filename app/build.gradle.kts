@@ -1,7 +1,8 @@
 plugins {
-    alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -44,12 +45,24 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
+    implementation("androidx.compose.material3:material3:1.3.1")
     implementation(libs.androidx.navigation.compose)
+
+    implementation("androidx.credentials:credentials:1.5.0-rc01")
+    implementation(libs.googleid)
+    implementation(libs.androidx.material3.android)
+    runtimeOnly("androidx.credentials:credentials-play-services-auth:1.5.0-rc01")
+
+    // https://mvnrepository.com/artifact/com.google.android.gms/play-services-auth
+    implementation(libs.play.services.auth)
+
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.auth.ktx)
+    implementation(platform(libs.firebase.bom))
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "408878889253",
+    "project_id": "senceparking",
+    "storage_bucket": "senceparking.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408878889253:android:c078d30e07828a1ee602cc",
+        "android_client_info": {
+          "package_name": "com.example.senceparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408878889253-frvmc0c9o84ltvalq4lmvo4hqf2gl86h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.senceparking",
+            "certificate_hash": "b4f1e8ddc657fb76743509b3c52a4b7092c41634"
+          }
+        },
+        {
+          "client_id": "408878889253-h2rc3milihpffvh5j1sn1qknj14qi3kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe0mFWbJlbvWGqO_xIKdoaQzbGdt8hNu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408878889253-h2rc3milihpffvh5j1sn1qknj14qi3kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
