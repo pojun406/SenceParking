@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 @Composable
-fun HomeScreen(navController: NavController) {
+fun HomeScreen() {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -28,11 +28,11 @@ fun HomeScreen(navController: NavController) {
         Text(text = "홈 화면", style = MaterialTheme.typography.headlineMedium)
         Spacer(modifier = Modifier.height(20.dp))
 
-        Button(
+/*        Button(
             onClick = { navController.navigate("login") }, // 🔹 홈에서 다시 로그인 화면으로 이동 가능
             modifier = Modifier.fillMaxWidth().padding(16.dp)
         ) {
             Text("로그아웃")
-        }
+        }*/
     }
 }

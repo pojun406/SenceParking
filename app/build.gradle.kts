@@ -54,6 +54,7 @@ dependencies {
     implementation("androidx.credentials:credentials:1.5.0-rc01")
     implementation(libs.googleid)
     implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.appcompat)
     runtimeOnly("androidx.credentials:credentials-play-services-auth:1.5.0-rc01")
 
     // https://mvnrepository.com/artifact/com.google.android.gms/play-services-auth
